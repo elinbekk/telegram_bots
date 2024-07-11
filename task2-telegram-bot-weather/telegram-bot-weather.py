@@ -4,7 +4,7 @@ import requests
 import io
 from datetime import timezone, timedelta, datetime
 
-key = "978c1c5ba7081d1e0302f436692b65c1"
+key = os.environ.get("OPEN_WEATHER_API_TOKEN")
 weather_url = 'https://api.openweathermap.org/data/2.5/weather'
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}"
